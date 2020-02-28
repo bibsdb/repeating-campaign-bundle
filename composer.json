@@ -1,0 +1,13 @@
+{
+  "name": "bibsdb/repeating-campaign-bundle",
+  "description": "Schedule a OS2display campaign to run every day. Distinguish between workdays and weekends.",
+  "type": "symfony-bundle",
+  "minimum-stability": "dev",
+  "require": {
+  },
+  "autoload": {
+      "psr-4": {
+          "Bibsdb\\RepeatingCampaignBundle\\": ""
+      }
+  }
+}
