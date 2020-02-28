@@ -1,0 +1,4 @@
+services:
+#    bibsdb_repeating_campaign.example:
+#        class: Bibsdb\RepeatingCampaignBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
