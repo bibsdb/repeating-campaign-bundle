@@ -73,8 +73,8 @@ class RepeatCampaignCommand extends ContainerAwareCommand
     $doctrine = $this->getContainer()->get('doctrine');
     $em = $doctrine->getEntityManager('default');
 
-    $date = \DateTime::createFromFormat('d-m-Y G:i', $input->getArgument('startdatetime'));
-    $enddate = \DateTime::createFromFormat('d-m-Y G:i', $input->getArgument('enddatetime'));
+    $date = \DateTime::createFromFormat('d-m-Y G:i', $input->getArgument('startdatetime'), new \DateTimeZone('Europe/Copenhagen'));
+    $enddate = \DateTime::createFromFormat('d-m-Y G:i', $input->getArgument('enddatetime'), new \DateTimeZone('Europe/Copenhagen'));
     $duration = $input->getArgument('duration');
 
     while ($date < $enddate) {
